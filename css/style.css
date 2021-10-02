@@ -342,6 +342,13 @@
   
   [hidden] {
     display: none;
+    
+}
+
+
+.body {
+  font-style: italic;
+  margin: 5px;
 }
 
 .flex-container {
@@ -352,19 +359,26 @@
   }
 
 .flex-header {
+    font-size: larger;
     background-color: dodgerblue;
-    padding: 10px;
+    padding: 2px;
     flex: 100%;
-    border: solid
+    border: solid;
+    height: 250px;
+    text-align: center;
+   
+    
   }
 .flex-nav {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 100%;
-    border: solid
+  text-align: left;
+  padding: 5px;
+  align-items: left;
+}
+#idList{
+  margin: 2px;
+  padding-left: 12px;
 
 }
-
   .flex-column-middle {
     background-color: #f1f1f1;
     padding: 10px;
@@ -374,8 +388,9 @@
   .flex-column-left {
     background-color: #f1f1f1;
     padding: 10px;
-    flex: 25%;
+     flex:  25%;
     border: solid
+    
   }
   
   .flex-column-right {
@@ -388,12 +403,47 @@
       border: solid;
       padding: 10px;
   }
-  @media  (min-width: 421px) {
-      .flex-container {
-          flex-direction:row;
-          
-         
-        }
-    }
+  
+  
+  
+  /*tablet*/
+  @media only screen and (min-width: 421px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    } 
+    .flex-column-left {
+       flex-wrap: wrap;
+       
+     }
+     .flex-column-middle {
+       flex-wrap: wrap;
+     }
+     .flex-column-right {
+       flex-wrap: nowrap;
+       
+      
+     }
+     
+     
+  }
+
+   /* desktop*/
+  @media only screen and (min-width: 800px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    } 
+
+   
+  }
+  
+
+    
+     
+ 
+  
+
+  
   
   
