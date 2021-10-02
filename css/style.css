@@ -428,7 +428,7 @@
      
   }
 
-   /* desktop
+   /* desktop*/
   @media only screen and (min-width: 800px) {
     .flex-container {
       flex-direction: row;
