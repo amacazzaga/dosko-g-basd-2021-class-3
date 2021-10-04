@@ -1,0 +1,6 @@
+.flex-column-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 25%;
+    border: solid
+  }

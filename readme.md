@@ -2,7 +2,7 @@
 ## Problemática semanal 03
 
 - HTML & CSS Flexbox creation  online newspapper
-
+- Created based on Mobile First concept
 
 ## Author
 
